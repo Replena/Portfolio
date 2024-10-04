@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const DarkModeSwitch = () => {
+const ModeSwitch = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
@@ -24,4 +24,4 @@ const DarkModeSwitch = () => {
   );
 };
 
-export default DarkModeSwitch;
+export default ModeSwitch;

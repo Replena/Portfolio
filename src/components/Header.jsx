@@ -1,9 +1,12 @@
 const Header = () => {
   return (
     <header>
-      <button>Skills</button>
-      <button>Projects</button>
-      <button>Hire me</button>
+      <div>A</div>
+      <div>
+        <a>Skills</a>
+        <a>Projects</a>
+        <a>Hire me</a>
+      </div>
     </header>
   );
 };
