@@ -2,6 +2,69 @@
     "ModeSwitch": {
       "darkMode": "DARK MODE",
       "languageSwitch": "TÜRKÇE'YE GEÇ",
+    },
+    "Header": {
+        "skills": "Skills",
+        "projects": "Projects",
+        "hireMe": "Hire me"
+    },
+    "Intro": {
+        "name": "Alperen Mimarlar",
+        "title": "Creative thinker\nMinimalism lover",
+        "description": "Hi, I’m Alperen. I’m a full-stack developer. If you are looking for a developer who can craft solid and scalable frontend products with great user experiences, let’s shake hands with me."
+    },
+    "Buttons": {
+        "hireMe": "Hire me",
+        "github": "Github",
+        "linkedin": "LinkedIn"
+    },
+    "Skills": {
+        "title": "Skills",
+        "javascript": "Java Script",
+        "react": "React.Js",
+        "nodejs": "Node.Js",
+        "javascriptDesc": "Experienced in creating clean code and problem solving in JavaScript.",
+        "reactDesc": "Expertise in building powerful user interfaces with React.",
+        "nodejsDesc": "Strong understanding of back-end development with Node.js."
+    },
+    "Profile": {
+        "profileTitle": "Profile",
+        "dateOfBirth": "Date of Birth",
+        "dateOfBirthValue": "05.06.2001",
+        "location": "Location",
+        "locationValue": "Istanbul",
+        "education": "Education",
+        "educationValue": "Istanbul University, Computer Programming\nAssociate Degree, 2024",
+        "preferredRole": "Preferred Role",
+        "preferredRoleValue": "Frontend, UI"
+    },
+    "AboutMe": {
+        "aboutTitle": "About Me",
+        "aboutDescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, dolt laborum aliquam voluptatum nisi mollitia.\n\nMinima accusamus ratione soluta asperrim sit voluptas? Dicta quod deserunt quam temporibus cumque magnam!"
+    },
+    "Projects": {
+        "projectsTitle": "Projects",
+        "workintech": {
+            "title": "Workintech",
+            "description": "A simple, customizable, minimal single-page cookie consent banner to help you comply with GDPR and CCPA regulations. Compatible with multiple frameworks and supports customization."
+        },
+        "randomJokes": {
+            "title": "Random Jokes",
+            "description": "A simple, customizable, minimal single-page cookie consent banner to help you comply with GDPR and CCPA regulations. Compatible with multiple frameworks and supports customization."
+        },
+        "journey": {
+            "title": "Journey",
+            "description": "A simple, customizable, minimal single-page cookie consent banner to help you comply with GDPR and CCPA regulations. Compatible with multiple frameworks and supports customization."
+        },
+        "github": "Github",
+        "viewSite": "View Site"
+    },
+    "Footer": {
+        "contact": "Let’s work together on your next product.",
+        "email": "almilasu.code@gmail.com",
+        "personalBlog": "Personal Blog",
+        "github": "Github",
+        "linkedin": "LinkedIn"
     }
   }
   
