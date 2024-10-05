@@ -1,0 +1,141 @@
+{
+    "en": {
+      "ModeSwitch": {
+        "darkMode": "DARK MODE",
+        "languageSwitch": "SWITCH TO TURKISH"
+      },
+      "Header": {
+        "skills": "Skills",
+        "projects": "Projects",
+        "hireMe": "Hire me"
+      },
+      "Intro": {
+        "name": "Alperen Mimarlar",
+        "title": "Creative thinker\nMinimalism lover",
+        "description": "Hi, I’m Alperen. I’m a full-stack developer. If you are looking for a developer who can craft solid and scalable frontend products with great user experiences, let’s shake hands with me."
+      },
+      "Buttons": {
+        "hireMe": "Hire me",
+        "github": "Github",
+        "linkedin": "LinkedIn"
+      },
+      "Skills": {
+        "title": "Skills",
+        "javascript": "Java Script",
+        "react": "React.Js",
+        "nodejs": "Node.Js",
+        "javascriptDesc": "Experienced in creating clean code and problem solving in JavaScript.",
+        "reactDesc": "Expertise in building powerful user interfaces with React.",
+        "nodejsDesc": "Strong understanding of back-end development with Node.js."
+      },
+      "Profile": {
+        "profileTitle": "Profile",
+        "dateOfBirth": "Date of Birth",
+        "dateOfBirthValue": "05.06.2001",
+        "location": "Location",
+        "locationValue": "Istanbul",
+        "education": "Education",
+        "educationValue": "Istanbul University, Computer Programming\nAssociate Degree, 2024",
+        "preferredRole": "Preferred Role",
+        "preferredRoleValue": "Frontend, UI"
+      },
+      "AboutMe": {
+        "aboutTitle": "About Me",
+        "aboutDescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, dolt laborum aliquam voluptatum nisi mollitia.\n\nMinima accusamus ratione soluta asperrim sit voluptas? Dicta quod deserunt quam temporibus cumque magnam!"
+      },
+      "Projects": {
+        "projectsTitle": "Projects",
+        "workintech": {
+          "title": "Workintech",
+          "description": "A simple, customizable, minimal single-page cookie consent banner to help you comply with GDPR and CCPA regulations. Compatible with multiple frameworks and supports customization."
+        },
+        "randomJokes": {
+          "title": "Random Jokes",
+          "description": "A simple, customizable, minimal single-page cookie consent banner to help you comply with GDPR and CCPA regulations. Compatible with multiple frameworks and supports customization."
+        },
+        "journey": {
+          "title": "Journey",
+          "description": "A simple, customizable, minimal single-page cookie consent banner to help you comply with GDPR and CCPA regulations. Compatible with multiple frameworks and supports customization."
+        },
+        "github": "Github",
+        "viewSite": "View Site"
+      },
+      "Footer": {
+        "contact": "Let’s work together on your next product.",
+        "email": "almilasu.code@gmail.com",
+        "personalBlog": "Personal Blog",
+        "github": "Github",
+        "linkedin": "LinkedIn"
+      }
+    },
+    "tr": {
+      "ModeSwitch": {
+        "darkMode": "KARANLIK MOD",
+        "languageSwitch": "TÜRKÇE'YE GEÇ"
+      },
+      "Header": {
+        "skills": "Yetenekler",
+        "projects": "Projeler",
+        "hireMe": "Beni işe al"
+      },
+      "Intro": {
+        "name": "Almila Su",
+        "title": "Yaratıcı Düşünür\nMinimalizm Sever",
+        "description": "Merhaba, ben Alperen. Ben bir full-stack geliştiricisiyim. Eğer sağlam ve ölçeklenebilir frontend ürünleri oluşturan bir geliştirici arıyorsanız, benimle el sıkışalım."
+      },
+      "Buttons": {
+        "hireMe": "Beni işe al",
+        "github": "Github",
+        "linkedin": "LinkedIn"
+      },
+      "Skills": {
+        "title": "Yetenekler",
+        "javascript": "Java Script",
+        "react": "React.Js",
+        "nodejs": "Node.Js",
+        "javascriptDesc": "JavaScript'te temiz kod yazma ve problem çözme konusunda deneyimliyim.",
+        "reactDesc": "React ile güçlü kullanıcı arayüzleri oluşturma konusunda uzmanım.",
+        "nodejsDesc": "Node.js ile back-end geliştirme konusunda güçlü bir anlayışa sahibim."
+      },
+      "Profile": {
+        "profileTitle": "Profil",
+        "dateOfBirth": "Doğum Tarihi",
+        "dateOfBirthValue": "24.03.1996",
+        "location": "İkamet Şehri",
+        "locationValue": "Ankara",
+        "education": "Eğitim Durumu",
+        "educationValue": "Hacettepe Üniv. Biyoloji\nLisans, 2016",
+        "preferredRole": "Tercih Ettiği Rol",
+        "preferredRoleValue": "Frontend, UI"
+      },
+      "AboutMe": {
+        "aboutTitle": "Hakkımda",
+        "aboutDescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, dolt laborum aliquam voluptatum nisi mollitia.\n\nMinima accusamus ratione soluta asperrim sit voluptas? Dicta quod deserunt quam temporibus cumque magnam!"
+      },
+      "Projects": {
+        "projectsTitle": "Projeler",
+        "workintech": {
+          "title": "Workintech",
+          "description": "GDPR ve CCPA düzenlemelerine uymanıza yardımcı olmak için basit, özelleştirilebilir, minimal tek sayfalık çerez izin banner'ı. Birden fazla framework ile uyumlu ve özelleştirme destekli."
+        },
+        "randomJokes": {
+          "title": "Rastgele Şakalar",
+          "description": "GDPR ve CCPA düzenlemelerine uymanıza yardımcı olmak için basit, özelleştirilebilir, minimal tek sayfalık çerez izin banner'ı. Birden fazla framework ile uyumlu ve özelleştirme destekli."
+        },
+        "journey": {
+          "title": "Yolculuk",
+          "description": "GDPR ve CCPA düzenlemelerine uymanıza yardımcı olmak için basit, özelleştirilebilir, minimal tek sayfalık çerez izin banner'ı. Birden fazla framework ile uyumlu ve özelleştirme destekli."
+        },
+        "github": "Github",
+        "viewSite": "Siteyi Gör"
+      },
+      "Footer": {
+        "contact": "Bir sonraki ürününüzde birlikte çalışalım.",
+        "email": "almilasu.code@gmail.com",
+        "personalBlog": "Kişisel Blog",
+        "github": "Github",
+        "linkedin": "LinkedIn"
+      }
+    }
+  }
+  
