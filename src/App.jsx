@@ -10,20 +10,18 @@ import { DarkModeContext } from "./contexts/darkModeContext.jsx";
 function App() {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div
-      className={`min-h-screen container mx-auto px-2 ${
-        darkMode ? "dark" : ""
-      }`}
-    >
+    <div className={`${darkMode ? "dark" : ""}`}>
       <div className="bg-white dark:bg-gray-900 text-black dark:text-white min-h-screen">
-        <Header />
-        <main className="container mx-auto px-4">
-          <Hero />
-          <Skills />
-          <Profile />
-          <Projects />
-        </main>
-        <Footer />
+        <div className="min-h-screen container mx-auto px-2 ">
+          <Header />
+          <main className="container mx-auto px-4">
+            <Hero />
+            <Skills />
+            <Profile />
+            <Projects />
+          </main>
+          <Footer />
+        </div>
       </div>
     </div>
   );
