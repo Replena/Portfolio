@@ -2,9 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-/*:root {
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 border border-transparent rounded hover:border-tertiary hover:text-tertiary  transition duration-200 ease-in-out;
+  }
+  .sub-heading {
+    @apply text-xl font-semibold mb-2 text-light-blue dark:text-dark-softPurple;
+  }
+}
+
+:root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}*/
+}
+/*
+* {
+  border: 1px solid red;
+}
+*/

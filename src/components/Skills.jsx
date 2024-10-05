@@ -6,21 +6,21 @@ function Skills() {
       <h2 className="text-3xl font-bold mb-8">Skills</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <h3 className="text-xl font-semibold mb-2">Java Script</h3>
+          <h3 className="sub-heading">Java Script</h3>
           <p className="">
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
             officia deserunt mollit anim id est laborum.
           </p>
         </div>
         <div>
-          <h3 className="text-xl font-semibold mb-2">React.Js</h3>
+          <h3 className="sub-heading">React.Js</h3>
           <p className="">
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
             officia deserunt mollit anim id est laborum.
           </p>
         </div>
         <div>
-          <h3 className="text-xl font-semibold mb-2">Node.Js</h3>
+          <h3 className="sub-heading">Node.Js</h3>
           <p className="">
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
             officia deserunt mollit anim id est laborum.
