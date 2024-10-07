@@ -6,23 +6,40 @@ import Projects from "./components/Projects.jsx";
 import Footer from "./components/Footer.jsx";
 import "./App.css";
 import { DarkModeContextProvider } from "./contexts/darkModeContext.jsx";
-
+import { LanguageContextProvider } from "./contexts/languageContext.jsx";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
-    <DarkModeContextProvider>
-      <div className="bg-white dark:bg-gray-900 text-secondary dark:text-white min-h-screen">
-        <div className="min-h-screen container mx-auto px-2 ">
-          <Header />
-          <main className="container mx-auto px-4">
-            <Hero />
-            <Skills />
-            <Profile />
-            <Projects />
-          </main>
+    <LanguageContextProvider>
+      <DarkModeContextProvider>
+        <div className="bg-white dark:bg-gray-900 text-secondary dark:text-white min-h-screen">
+          <div className="min-h-screen container mx-auto px-2 ">
+            <Header />
+            <main className="container mx-auto px-4">
+              <Hero />
+              <Skills />
+              <Profile />
+              <Projects />
+            </main>
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
-    </DarkModeContextProvider>
+        <ToastContainer
+          position="top-center"
+          autoClose={2000}
+          limit={3}
+          hideProgressBar
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
+      </DarkModeContextProvider>
+    </LanguageContextProvider>
   );
 }
 

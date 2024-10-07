@@ -5,22 +5,23 @@
         "languageSwitch": "'YE GEÇ",
         "languageTo":" TÜRKÇE"}
       ,
-      "header": [{
-        "skills": "Skills"},{
-        "projects": "Projects"},{
-        "hireMe": "Hire me"}],
+"Header": {
+  "skills": "Skills",
+  "projects": "Projects",
+  "hireMe": "Hire me"
+},
       "Intro": {
         "name": "Alperen Mimarlar",
-        "title": "Creative thinker\nMinimalism lover",
+        "title": "Creative thinker Minimalism lover",
         "description": "Hi, I’m Alperen. I’m a full-stack developer. If you are looking for a developer who can craft solid and scalable frontend products with great user experiences, let’s shake hands with me."
       },
-      "Buttons": [{
+      "Buttons": {
         "hireMe": "Hire me"
-      }, {
+      , 
         "github": "Github"
-      }, {
+      , 
         "linkedin": "LinkedIn"
-      }],
+      },
       "Skills": {
         "title": "Skills",
         "javascript": "Java Script",
@@ -64,7 +65,7 @@
       "Footer": {
         "contact": "Let’s work together on your next product.",
         "email": "almilasu.code@gmail.com",
-        "personalBlog": "Personal Blog",
+        "blog": "Personal Blog",
         "github": "Github",
         "linkedin": "LinkedIn"
       }
@@ -72,15 +73,14 @@
     "tr": {
       "ModeSwitch": {
         "darkMode": "KARANLIK MOD",
-        "languageSwitch": "SWITCH TO ",
-         "languageTo":"TURKISH"
-        
+        "languageSwitch": "ENGLISH",
+        "languageTo":"SWITCH TO "
       },
-      "header": {
-        "skills": "Yetenekler",
-        "projects": "Projeler",
-        "hireMe": "Beni işe al"
-      },
+"Header": {
+  "skills": "Yetenekler",
+  "projects": "Projeler",
+  "hireMe": "Beni işe al"
+},
       "Intro": {
         "name": "Almila Su",
         "title": "Yaratıcı Düşünür\nMinimalizm Sever",
@@ -135,7 +135,7 @@
       "Footer": {
         "contact": "Bir sonraki ürününüzde birlikte çalışalım.",
         "email": "almilasu.code@gmail.com",
-        "personalBlog": "Kişisel Blog",
+        "blog": "Kişisel Blog",
         "github": "Github",
         "linkedin": "LinkedIn"
       }

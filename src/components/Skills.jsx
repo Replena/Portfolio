@@ -1,6 +1,7 @@
-import React from "react";
-
+import { useLanguage } from "../contexts/languageContext";
 function Skills() {
+  const { currentData } = useLanguage();
+  if (!currentData) return <p>Loading...</p>;
   return (
     <section id="skills" className="py-16">
       <h2 className="text-4xl font-semibold dark:text-dark-blueGray mb-6 text-light-black">

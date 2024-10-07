@@ -1,12 +1,13 @@
-import React from "react";
-
+import { useLanguage } from "../contexts/languageContext";
 function Footer() {
+  const { currentData } = useLanguage();
+  if (!currentData) return <p>Loading...</p>;
   return (
     <footer className="py-12 bg-light-beige dark:bg-dark-darkerGray">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 flex">
           <h2 className="text-3xl font-bold dark:text-dark-blueGray text-light-black">
-            Let's work together on your next product.
+            {currentData.Footer.contact}
           </h2>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center dark:text-dark-lightPurple underline">
@@ -14,30 +15,30 @@ function Footer() {
             href="mailto:alimsauce@gmail.com"
             className="mb-4 md:mb-0 text-light-red"
           >
-            alimsauce@gmail.com
+            {currentData.Footer.email}
           </a>
           <div className="flex space-x-4">
             <a
               href="https://personalblog.com"
               target="_blank"
-              className="text-light-dark"
+              className="text-light-dark dark:text-dark-lightGray"
             >
-              Personal Blog
+              {currentData.Footer.blog}
             </a>
 
             <a
-              href="https://github.com"
+              href="https://github.com/Replena"
               target="_blank"
               className="text-light-green"
             >
-              Github
+              {currentData.Footer.github}
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/alperen-mimarlar-683610202/"
               target="_blank"
               className="text-light-azure"
             >
-              LinkedIn
+              {currentData.Footer.linkedin}
             </a>
           </div>
         </div>

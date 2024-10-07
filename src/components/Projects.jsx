@@ -1,11 +1,10 @@
-import React from "react";
-
+import { useLanguage } from "../contexts/languageContext";
 const projects = [
   {
     title: "Workintech",
     description:
       "A simple, customizable, minimal style cookie plugin that allows you to SSR and select which cookies to accept or decline.",
-    image: "https://picsum.photos/100/70",
+    image: "https://picsum.photos/80",
     github: "https://github.com/project1",
     viewSite: "https://project1.com",
     tags: ["React", "Redux", "Axios"],
@@ -14,7 +13,7 @@ const projects = [
     title: "Random Jokes",
     description:
       "This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package.",
-    image: "https://picsum.photos/100/70",
+    image: "https://picsum.photos/80",
     github: "https://github.com/project2",
     viewSite: "https://project2.com",
     tags: ["React", "Redux", "Axios"],
@@ -23,7 +22,7 @@ const projects = [
     title: "Journey",
     description:
       "A simple, customizable mini course plugin that allows you to SSR and select which cookies to accept or decline.",
-    image: "https://picsum.photos/100/70",
+    image: "https://picsum.photos/80",
     github: "https://github.com/project3",
     viewSite: "https://project3.com",
     tags: ["React", "Redux", "Axios"],
@@ -31,17 +30,16 @@ const projects = [
 ];
 
 const Projects = () => {
+  const { currentData } = useLanguage();
+  if (!currentData) return <p>Loading...</p>;
   return (
     <section id="projects" className="py-16">
       <h2 className="text-4xl font-semibold dark:text-dark-blueGray mb-8 text-light-black">
-        Projects
+        {currentData.Projects.projectsTitle}
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-40">
         {projects.map((project, index) => (
-          <div
-            key={index}
-            className="rounded-lg overflow-hidden h-full flex flex-col"
-          >
+          <div key={index} className="rounded-lg flex flex-col">
             <img
               src={project.image}
               alt={project.title}

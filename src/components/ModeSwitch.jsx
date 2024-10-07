@@ -1,12 +1,16 @@
 import { useDarkMode } from "../contexts/darkModeContext";
+import { useLanguage } from "../contexts/languageContext";
 
 const ModeSwitch = () => {
   const { darkMode, setDarkMode } = useDarkMode();
-
+  const { setLanguage, currentData, language } = useLanguage();
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
-
+  const toggleLanguage = () => {
+    const newLanguage = language === "tr" ? "en" : "tr";
+    setLanguage(newLanguage);
+  };
   return (
     <div className="flex items-center space-x-4">
       <label className="flex items-center cursor-pointer">
@@ -26,14 +30,27 @@ const ModeSwitch = () => {
           </div>
         </div>
         <span className="ml-3 text-lg font-bold ">
-          {" "}
           {darkMode ? "Dark Mode" : "Light Mode"}
         </span>
       </label>
       <div>|</div>
-      <button className="text-lg font-bold dark:text-dark-languageDark ">
-        <span className="dark:text-dark-lightPurple text-primary">TÜRKÇE</span>
-        'YE GEÇ
+      <button
+        className="text-lg font-bold dark:text-dark-languageDark"
+        onClick={toggleLanguage}
+      >
+        <span className="dark:text-dark-lightPurple text-primary">
+          {currentData === "en" ? (
+            <>
+              {currentData.ModeSwitch.languageSwitch}
+              {currentData.ModeSwitch.languageTo}
+            </>
+          ) : (
+            <>
+              {currentData.ModeSwitch.languageTo}
+              {currentData.ModeSwitch.languageSwitch}
+            </>
+          )}
+        </span>
       </button>
     </div>
   );
