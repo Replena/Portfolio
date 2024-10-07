@@ -1,15 +1,27 @@
-import { createContext, useReducer } from "react";
+import { createContext, useContext, useEffect } from "react";
+import useLocalStorage from "../hooks/useLocalStorage";
 
-const INITIAL_STATE = {
-  darkMode: false,
-};
+const DarkModeContext = createContext();
 
-export const DarkModeContext = createContext(INITIAL_STATE);
+export function DarkModeContextProvider({ children }) {
+  const [darkMode, setDarkMode] = useLocalStorage(
+    "darkMode",
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  );
 
-export function darkModeContextProvider({ children }) {
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [darkMode]);
+
   return (
-    <DarkModeContext.Provider value={{ state }}>
+    <DarkModeContext.Provider value={{ darkMode, setDarkMode }}>
       {children}
     </DarkModeContext.Provider>
   );
 }
+
+export const useDarkMode = () => useContext(DarkModeContext);

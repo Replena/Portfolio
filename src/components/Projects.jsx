@@ -33,7 +33,9 @@ const projects = [
 const Projects = () => {
   return (
     <section id="projects" className="py-16">
-      <h2 className="text-3xl font-bold mb-8">Projects</h2>
+      <h2 className="text-3xl font-bold mb-8 dark:text-dark-blueGray">
+        Projects
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <div
@@ -46,19 +48,21 @@ const Projects = () => {
               className="w-full object-cover"
             />
             <div className="mt-3 flex flex-col flex-grow">
-              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+              <h3 className="text-xl font-semibold mb-2 dark:text-dark-lightLavender">
+                {project.title}
+              </h3>
               <p className="mb-4 flex-grow">{project.description}</p>
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-2 mb-4 ">
                 {project.tags.map((tag, tagIndex) => (
                   <span
                     key={tagIndex}
-                    className="px-2 py-1 rounded-full text-sm"
+                    className="px-2 py-1 rounded text-sm dark:text-dark-periwinkle dark:border dark:border-dark-periwinkle dark:bg-dark-darkGray"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
-              <div className="flex justify-between mt-auto">
+              <div className="flex justify-between mt-auto dark:text-dark-lightGray">
                 <a href={project.github} target="_blank">
                   Github
                 </a>

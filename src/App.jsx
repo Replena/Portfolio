@@ -5,7 +5,7 @@ import Profile from "./components/Profile.jsx";
 import Projects from "./components/Projects.jsx";
 import Footer from "./components/Footer.jsx";
 import "./App.css";
-import { DarkModeContextProvider } from "./contexts/dataContext.jsx";
+import { DarkModeContextProvider } from "./contexts/darkModeContext.jsx";
 
 function App() {
   return (

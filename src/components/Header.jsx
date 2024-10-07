@@ -1,8 +1,5 @@
-import { useContext } from "react";
 import ModeSwitch from "./ModeSwitch";
-import { DarkModeContext } from "../contexts/dataContext";
 const Header = () => {
-  const { headerData } = useContext(DarkModeContext);
   return (
     <header className="flex flex-col items-end p-4 space-y-4">
       <ModeSwitch />

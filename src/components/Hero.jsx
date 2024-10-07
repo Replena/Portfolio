@@ -1,5 +1,4 @@
-import github from "../images/button/github.svg";
-import linkedin from "../images/button/linkedIn.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Hero = () => {
   return (
     <div className="md:container  flex flex-col md:flex-row  ">
@@ -19,15 +18,19 @@ const Hero = () => {
           user experiences. Let's shake hands with me.
         </p>
         <div className="flex space-x-4">
-          <button className="bg-white text-black border border-black py-2 px-4 rounded flex items-center hover:bg-tertiary hover:text-white hover:border-transparent">
+          <button className="bg-white text-black border border-black py-2 px-4 rounded flex items-center hover:bg-tertiary hover:text-white hover:border-transparent dark:bg-dark-darkGray dark:text-dark-lightGray dark:border dark:border-dark-lightGray hover:dark:text-black hover:dark:bg-dark-lightGray">
+            {" "}
             Hire me
           </button>
-          <button className="bg-white text-black border border-black py-2 px-4 rounded flex items-center hover:bg-tertiary hover:text-white hover:border-transparent">
-            <img src={github} className="" />
+          <button className="bg-white text-black border border-black py-2 px-4 rounded flex items-center hover:bg-tertiary hover:text-white hover:border-transparent dark:bg-dark-darkGray dark:text-dark-lightGray dark:border dark:border-dark-lightGray hover:dark:text-black hover:dark:bg-dark-lightGray">
+            {" "}
+            <FontAwesomeIcon
+              icon="fa-brands fa-github"
+              className="dark:text-dark-lightPurple"
+            />
             Github
           </button>
-          <button className="bg-white text-black border border-black py-2 px-4 rounded flex items-center hover:bg-tertiary hover:text-white hover:border-transparent">
-            <img src={linkedin} className="fill-white" />
+          <button className="bg-white text-black border border-black py-2 px-4 rounded flex items-center hover:bg-tertiary hover:text-white hover:border-transparent dark:bg-dark-darkGray dark:text-dark-lightGray dark:border dark:border-dark-lightGray hover:dark:text-black hover:dark:bg-dark-lightGray">
             LinkedIn
           </button>
         </div>

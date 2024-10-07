@@ -3,32 +3,32 @@
       "ModeSwitch": {
         "darkMode": "DARK MODE",
         "languageSwitch": "'YE GEÇ",
-        "languageTo":" TÜRKÇE"
-      },
-      "header": {
-        "skills": "Skills",
-        "projects": "Projects",
-        "hireMe": "Hire me"
-      },
+        "languageTo":" TÜRKÇE"}
+      ,
+      "header": [{
+        "skills": "Skills"},{
+        "projects": "Projects"},{
+        "hireMe": "Hire me"}],
       "Intro": {
         "name": "Alperen Mimarlar",
         "title": "Creative thinker\nMinimalism lover",
         "description": "Hi, I’m Alperen. I’m a full-stack developer. If you are looking for a developer who can craft solid and scalable frontend products with great user experiences, let’s shake hands with me."
       },
-      "Buttons": {
-        "hireMe": "Hire me",
-        "github": "Github",
+      "Buttons": [{
+        "hireMe": "Hire me"
+      }, {
+        "github": "Github"
+      }, {
         "linkedin": "LinkedIn"
-      },
+      }],
       "Skills": {
         "title": "Skills",
         "javascript": "Java Script",
-        "react": "React.Js",
-        "nodejs": "Node.Js",
         "javascriptDesc": "Experienced in creating clean code and problem solving in JavaScript.",
+        "react": "React.Js",
         "reactDesc": "Expertise in building powerful user interfaces with React.",
-        "nodejsDesc": "Strong understanding of back-end development with Node.js."
-      },
+        "nodejs": "Node.Js",
+        "nodejsDesc": "Strong understanding of back-end development with Node.js."},
       "Profile": {
         "profileTitle": "Profile",
         "dateOfBirth": "Date of Birth",
