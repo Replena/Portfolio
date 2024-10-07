@@ -1,5 +1,4 @@
 import { useDarkMode } from "../contexts/darkModeContext";
-import SunAndMoonIcon from "../images/switch/sunAndMoon.svg";
 
 const ModeSwitch = () => {
   const { darkMode, setDarkMode } = useDarkMode();
@@ -17,13 +16,13 @@ const ModeSwitch = () => {
           checked={darkMode}
           onChange={toggleDarkMode}
         />
-        <div className="relative w-14 h-7 rounded-full flex items-center justify-between px-1 bg-gray-300 dark:bg-gray-700">
+        <div className="relative w-14 h-7 rounded-full flex items-center justify-between px-1 bg-gray-300 dark:bg-dark-buttonColor">
           <div
             className={`h-6 w-6 rounded-full flex items-center justify-center transition-transform duration-500 transform ${
-              darkMode ? "translate-x-7" : ""
+              darkMode ? "translate-x-6" : ""
             }`}
           >
-            <img src={SunAndMoonIcon} className="h-4 w-4" />
+            <div src="" className="h-4 w-4 ring-0 bg-[#FFE86E] rounded-full" />
           </div>
         </div>
         <span className="ml-3 text-lg font-bold ">
@@ -31,8 +30,10 @@ const ModeSwitch = () => {
           {darkMode ? "Dark Mode" : "Light Mode"}
         </span>
       </label>
-      <button className="text-lg font-bold">
-        <span className="text-primary"></span> tr
+      <div>|</div>
+      <button className="text-lg font-bold dark:text-dark-languageDark ">
+        <span className="dark:text-dark-lightPurple text-primary">TÜRKÇE</span>
+        'YE GEÇ
       </button>
     </div>
   );

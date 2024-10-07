@@ -10,11 +10,10 @@ const Header = () => {
             A
           </div>
         </div>
-        <nav className="flex space-x-32 dark:text-light-gray ">
-          <a
-            href="#skills"
-            className="btn-primary hover:dark:text-tertiary"
-          ></a>
+        <nav className="flex space-x-32 dark:text-secondary">
+          <a href="#skills" className="btn-primary ">
+            dsada
+          </a>
           <a href="#projects" className="btn-primary">
             aasda
           </a>

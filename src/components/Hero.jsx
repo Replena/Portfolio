@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Hero = () => {
   return (
     <div className="md:container  flex flex-col md:flex-row  ">
@@ -18,28 +17,26 @@ const Hero = () => {
           user experiences. Let's shake hands with me.
         </p>
         <div className="flex space-x-4">
-          <button className="bg-white text-black border border-black py-2 px-4 rounded flex items-center hover:bg-tertiary hover:text-white hover:border-transparent dark:bg-dark-darkGray dark:text-dark-lightGray dark:border dark:border-dark-lightGray hover:dark:text-black hover:dark:bg-dark-lightGray">
+          <button className="bg-white text-tertiary border border-tertiary py-2 px-4 rounded flex items-center hover:bg-tertiary hover:text-white hover:border-transparent dark:bg-dark-darkGray dark:text-dark-lightGray dark:border dark:border-dark-lightGray hover:dark:text-black hover:dark:bg-dark-lightGray">
             {" "}
             Hire me
           </button>
-          <button className="bg-white text-black border border-black py-2 px-4 rounded flex items-center hover:bg-tertiary hover:text-white hover:border-transparent dark:bg-dark-darkGray dark:text-dark-lightGray dark:border dark:border-dark-lightGray hover:dark:text-black hover:dark:bg-dark-lightGray">
+          <button className="bg-white text-tertiary border border-tertiary py-2 px-4 rounded flex items-center hover:bg-tertiary hover:text-white hover:border-transparent dark:bg-dark-darkGray dark:text-dark-lightGray dark:border dark:border-dark-lightGray hover:dark:text-black hover:dark:bg-dark-lightGray">
             {" "}
-            <FontAwesomeIcon
-              icon="fa-brands fa-github"
-              className="dark:text-dark-lightPurple"
-            />
+            <i class="fa-brands fa-github dark:text-dark-lightPurple"></i>
             Github
           </button>
-          <button className="bg-white text-black border border-black py-2 px-4 rounded flex items-center hover:bg-tertiary hover:text-white hover:border-transparent dark:bg-dark-darkGray dark:text-dark-lightGray dark:border dark:border-dark-lightGray hover:dark:text-black hover:dark:bg-dark-lightGray">
+          <button className="bg-white text-tertiary border border-tertiary py-2 px-4 rounded flex items-center hover:bg-tertiary hover:text-white hover:border-transparent dark:bg-dark-darkGray dark:text-dark-lightGray dark:border dark:border-dark-lightGray hover:dark:text-black hover:dark:bg-dark-lightGray">
+            <i className="fab fa-linkedin-in dark:text-dark-lightPurple"></i>
             LinkedIn
           </button>
         </div>
       </div>
-      <div className="md:w-1/3 md:mt-0">
+      <div className="md:w-1/3 md:mt-0 ">
         <img
-          src="https://picsum.photos/400/400"
+          src="https://picsum.photos/id/1/200/300"
           alt="Alperen Mimarlar"
-          className="w-full h-auto rounded-lg"
+          className="w-full h-auto rounded-3xl "
         />
       </div>
     </div>

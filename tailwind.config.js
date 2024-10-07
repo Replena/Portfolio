@@ -22,6 +22,7 @@ export default {
           beige: "#F9F9F9",
           lavender: "#EEEBFF",
           lightpink: "#7B61FF",
+          yellow: "#FFE86E",
         },
 
         dark: {
@@ -41,6 +42,8 @@ export default {
           green: "#17D18B",
           lightGray2: "#E1E1FF",
           periwinkle: "#8F88FF",
+          buttonColor: "#3A3A3A",
+          languageDark: "#777777",
         },
       },
       fontFamily: {
