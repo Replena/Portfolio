@@ -18,7 +18,7 @@ const Hero = () => {
         </h1>
         <p className="lg:w-2/3 w-full">{currentData.Intro.description}</p>
 
-        <div className="flex lg:w-1/3 w-full space-x-2 justify-between my-5">
+        <div className="flex lg:w-2/3 w-full space-x-2 justify-between lg:justify-start my-5">
           {currentData.Buttons.map((button, index) => (
             <button
               key={index}

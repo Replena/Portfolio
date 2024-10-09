@@ -21,7 +21,7 @@ const Projects = () => {
                 {project.title}
               </h3>
               <p className="mb-4 flex-grow">{project.description}</p>
-              <div className="flex flex-wrap gap-2 mb-4 justify-evenly">
+              <div className="flex flex-wrap gap-2 mb-4 justify-evenly lg:justify-start">
                 {project.technologies.map((tech, techIndex) => (
                   <span
                     key={techIndex}
@@ -31,7 +31,7 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
-              <div className="flex justify-between mx-5 dark:text-dark-lightGray underline text-tertiary font-semibold">
+              <div className="flex justify-between mx-5 lg:m-0 dark:text-dark-lightGray underline text-tertiary font-semibold">
                 <a href={project.github} target="_blank" className="">
                   Github
                 </a>

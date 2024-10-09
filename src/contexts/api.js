@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import data from "../data/data.json";
 import { toast } from "react-toastify";
-const useFetchData = (language) => {
+const useAPI = (language) => {
   const [loading, setLoading] = useState(true);
   const [fetchedData, setFetchedData] = useState(null);
 
@@ -67,4 +67,4 @@ const useFetchData = (language) => {
   };
 };
 
-export default useFetchData;
+export default useAPI;

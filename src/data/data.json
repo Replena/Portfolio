@@ -19,7 +19,7 @@
     },
 "Buttons": [
    {
-      "label": "Beraber Çalışalım"
+      "label": "Work with me"
     },
     {
       "label": "GitHub",
@@ -182,7 +182,7 @@
         "title": "Projelerim",
         "items": [
           {
-            "img": "https://picsum.photos/100",
+            "img": "https://picsum.photos/id/1/100",
             "title": "Technological Meals",
             "description": "Kullanıcılarınıza hangi çerezleri kabul edip etmeyeceklerini seçme imkanı sunan basit, özelleştirilebilir bir çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve NPM paketi olarak mevcut. Git deposu sayesinde kodda ve temalarda her türlü özelleştirme yapılabiliyor.",
             "technologies": ["react", "reactstrap", "grid"],
@@ -190,15 +190,15 @@
             "viewSite": "https://www.exampleproject.com"
           },
           {
-            "img": "https://picsum.photos/100",
-            "title": "Technological Meals",
+            "img": "https://picsum.photos/id/2/70",
+            "title": "eMeals",
             "description": "Kullanıcılarınıza hangi çerezleri kabul edip etmeyeceklerini seçme imkanı sunan basit, özelleştirilebilir bir çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve NPM paketi olarak mevcut. Git deposu sayesinde kodda ve temalarda her türlü özelleştirme yapılabiliyor.",
             "technologies": ["react", "reactstrap", "grid"],
             "github": "https://www.exampleproject.com",
             "viewSite": "https://www.exampleproject.com"
           },
           {
-            "img": "https://picsum.photos/100",
+            "img": "https://picsum.photos/id/5/100",
             "title": "Technological Meals",
             "description": "Kullanıcılarınıza hangi çerezleri kabul edip etmeyeceklerini seçme imkanı sunan basit, özelleştirilebilir bir çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve NPM paketi olarak mevcut. Git deposu sayesinde kodda ve temalarda her türlü özelleştirme yapılabiliyor.",
             "technologies": ["react", "reactstrap", "grid"],

@@ -3,7 +3,8 @@ import { useLanguage } from "../contexts/languageContext";
 
 const ModeSwitch = () => {
   const { darkMode, setDarkMode } = useDarkMode();
-  const { setLanguage, currentData, language } = useLanguage();
+  const { setLanguage, currentData, language, fetchedData } = useLanguage();
+  console.log(currentData);
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
