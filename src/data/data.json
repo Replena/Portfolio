@@ -1,144 +1,221 @@
 {
-    "en": {
-      "ModeSwitch": {
-        "darkMode": "DARK MODE",
-        "languageSwitch": "'YE GEÇ",
-        "languageTo":" TÜRKÇE"}
-      ,
-"Header": {
-  "skills": "Skills",
-  "projects": "Projects",
-  "hireMe": "Hire me"
-},
-      "Intro": {
-        "name": "Alperen Mimarlar",
-        "title": "Creative thinker Minimalism lover",
-        "description": "Hi, I’m Alperen. I’m a full-stack developer. If you are looking for a developer who can craft solid and scalable frontend products with great user experiences, let’s shake hands with me."
+  "en": {
+    "ModeSwitch": {
+      "darkMode": "DARK MODE",
+      "languageSwitch": "'YE ÇEVİR",
+      "languageTo": "TÜRKÇE"
+    },
+    "Header": {
+      "nav": [
+        "Skills",
+        "Projects",
+        "Hire me"
+      ]
+    },
+    "Intro": {
+      "name": "Alperen Mimarlar",
+      "title": "Creative thinker Minimalism lover",
+      "description": "Hi, I’m Alperen, a full-stack developer. If you're seeking a developer capable of crafting robust and scalable frontend products that deliver exceptional user experiences, I would love to connect with you."
+    },
+"Buttons": [
+   {
+      "label": "Beraber Çalışalım"
+    },
+    {
+      "label": "GitHub",
+      "icon": "fa-brands fa-github"
+    },
+    {
+      "label": "LinkedIn",
+      "icon": "fab fa-linkedin-in"
+    }
+  ],
+    "Skills": [
+      {
+        "title": "JavaScript",
+        "content": "My expertise in JavaScript encompasses foundational elements such as variables, data structures, and control structures, extending to function constructs that include arrow functions and higher-order functions. I possess the ability to manipulate the DOM effectively, utilizing element selection and event listeners to create dynamic user interfaces. Additionally, I am proficient in asynchronous programming with Promises and async/await, enabling efficient data management. With hands-on experience in developing modern applications using the React framework, I also conduct error management and debugging processes using console tools. My experience includes working with RESTful APIs to fetch and process data. I am committed to continuous improvement, aiming to deliver effective and innovative solutions."
       },
-      "Buttons": {
-        "hireMe": "Hire me"
-      , 
-        "github": "Github"
-      , 
-        "linkedin": "LinkedIn"
+      {
+        "title": "React",
+        "content": "My proficiency in React encompasses a comprehensive understanding of component architecture, state management utilizing both state and props, and lifecycle methods that optimize application performance. I am skilled in event handling, form processing, and conditional rendering to create intuitive user interfaces. Additionally, I have experience with routing through React Router, employing styled components for modular and maintainable styling, and integrating with popular libraries such as Redux and Axios for state management and API interactions. My experience also includes testing applications using tools like Jest and Enzyme to ensure quality and reliability. I am dedicated to continuous learning, consistently striving to deliver innovative solutions that enhance user experience."
       },
-      "Skills": {
-        "title": "Skills",
-        "javascript": "Java Script",
-        "javascriptDesc": "Experienced in creating clean code and problem solving in JavaScript.",
-        "react": "React.Js",
-        "reactDesc": "Expertise in building powerful user interfaces with React.",
-        "nodejs": "Node.Js",
-        "nodejsDesc": "Strong understanding of back-end development with Node.js."},
-      "Profile": {
-        "profileTitle": "Profile",
-        "dateOfBirth": "Date of Birth",
-        "dateOfBirthValue": "05.06.2001",
-        "location": "Location",
-        "locationValue": "Istanbul",
-        "education": "Education",
-        "educationValue": "Istanbul University, Computer Programming\nAssociate Degree, 2024",
-        "preferredRole": "Preferred Role",
-        "preferredRoleValue": "Frontend, UI"
-      },
-      "AboutMe": {
-        "aboutTitle": "About Me",
-        "aboutDescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, dolt laborum aliquam voluptatum nisi mollitia.\n\nMinima accusamus ratione soluta asperrim sit voluptas? Dicta quod deserunt quam temporibus cumque magnam!"
-      },
-      "Projects": {
-        "projectsTitle": "Projects",
-        "workintech": {
-          "title": "Workintech",
-          "description": "A simple, customizable, minimal single-page cookie consent banner to help you comply with GDPR and CCPA regulations. Compatible with multiple frameworks and supports customization."
+      {
+        "title": "Tailwind",
+        "content": "I possess a strong proficiency in Tailwind CSS, utilizing its utility-first approach for efficient styling and component design. My expertise includes creating custom themes and applying responsive design principles, leveraging Flexbox and Grid systems to achieve flexible layouts. I am adept at utility customization to suit project requirements and implementing animation and transition effects to enhance user interactions. Additionally, I have experience integrating Tailwind CSS with component libraries such as daisyUI, optimizing projects for performance and speed. I am committed to continuous improvement in my skills, aiming to create fast and effective user interfaces."
+      }
+    ],
+    "Profile": {
+      "subProfile": [
+        {
+          "title": "Date of Birth",
+          "value": "05.06.2001"
         },
-        "randomJokes": {
-          "title": "Random Jokes",
-          "description": "A simple, customizable, minimal single-page cookie consent banner to help you comply with GDPR and CCPA regulations. Compatible with multiple frameworks and supports customization."
+        {
+          "title": "City",
+          "value": "Istanbul"
         },
-        "journey": {
-          "title": "Journey",
-          "description": "A simple, customizable, minimal single-page cookie consent banner to help you comply with GDPR and CCPA regulations. Compatible with multiple frameworks and supports customization."
+        {
+          "title": "Education",
+          "value": "Istanbul University, Computer Programming"
         },
-        "github": "Github",
-        "viewSite": "View Site"
-      },
-      "Footer": {
-        "contact": "Let’s work together on your next product.",
-        "email": "almilasu.code@gmail.com",
-        "blog": "Personal Blog",
-        "github": "Github",
-        "linkedin": "LinkedIn"
+        {
+          "title": "Preferred Role",
+          "value": "Frontend, UI"
+        }
+      ],
+      "about": {
+        "title": "About Me",
+        "content": "As a Frontend Developer with a growth mindset, I am passionate about creating user-friendly and modern web applications. Pursuing my childhood dream, I have acquired in-depth knowledge and expertise in technologies such as HTML, CSS, JavaScript, React.js, Tailwind CSS, and Redux. I embrace innovation in the tech landscape and possess a strong problem-solving mindset, viewing each project as an opportunity for personal and professional development. I am team-oriented and strive to add value through effective communication and collaboration on projects. I am eager to tackle new challenges in the software industry, continuously pushing myself to expand my skills. In the future, I aim to deliver creative and performance-driven solutions using modern technologies."
       }
     },
-    "tr": {
-      "ModeSwitch": {
-        "darkMode": "KARANLIK MOD",
-        "languageSwitch": "ENGLISH",
-        "languageTo":"SWITCH TO "
+    "Projects": {
+      "title": "Projelerim",
+      "items":  [
+      {
+        "img": "https://picsum.photos/100",
+        "title": "Technological Meals",
+        "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+        "technologies": ["react", "reactstrap", "grid"],
+        "github": "https://www.exampleproject.com",
+        "viewSite": "https://www.exampleproject.com"
       },
-"Header": {
-  "skills": "Yetenekler",
-  "projects": "Projeler",
-  "hireMe": "Beni işe al"
-},
-      "Intro": {
-        "name": "Almila Su",
-        "title": "Yaratıcı Düşünür\nMinimalizm Sever",
-        "description": "Merhaba, ben Alperen. Ben bir full-stack geliştiricisiyim. Eğer sağlam ve ölçeklenebilir frontend ürünleri oluşturan bir geliştirici arıyorsanız, benimle el sıkışalım."
+      {
+        "img": "https://picsum.photos/100",
+        "title": "Technological Meals",
+        "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+        "technologies": ["react", "reactstrap", "grid"],
+        "github": "https://www.exampleproject.com",
+        "viewSite": "https://www.exampleproject.com"
       },
-      "Buttons": {
-        "hireMe": "Beni işe al",
-        "github": "Github",
-        "linkedin": "LinkedIn"
+      {
+        "img": "https://picsum.photos/100",
+        "title": "Technological Meals",
+        "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+        "technologies": ["react", "reactstrap", "grid"],
+        "github": "https://www.exampleproject.com",
+        "viewSite": "https://www.exampleproject.com"
+      }
+    ] 
+  },
+    "Footer": {
+      "catchword": "Are you ready to design the project of the future together?",
+      "mail": "alperenmimarlar@gmail.com",
+      "links": [
+        "Personal Blog",
+        "Github",
+        "Linkedin"
+      ]
+    }
+  },
+  "tr": {
+    "ModeSwitch": {
+      "darkMode": "KARANLIK MOD",
+      "languageSwitch": "ENGLISH",
+      "languageTo": "SWITCH TO "
+    },
+    "Header": {
+      "nav": [
+        "Yetenekler",
+        "Projeler",
+        "Beraber Çalışalım"
+      ]
+    },
+    "Intro": {
+      "name": "Alperen Mimarlar",
+      "title": "Yaratıcı Düşünür Minimalizm Sever",
+      "description": "Merhaba, ben Alperen. Full-stack geliştirici olarak, sağlam ve ölçeklenebilir frontend ürünleri oluşturma konusunda deneyim sahibiyim. Eğer kaliteli kullanıcı deneyimleri sunan projeler geliştiren bir geliştirici arıyorsanız, birlikte çalışmaktan memnuniyet duyarım."
+    },
+"Buttons": [
+   {
+      "label": "Beraber Çalışalım",
+      "icon": null
+    },
+    {
+      "label": "GitHub",
+      "icon": "fa-brands fa-github"
+    },
+    {
+      "label": "LinkedIn",
+      "icon": "fab fa-linkedin-in"
+    }
+  ],
+    "Skills": [
+      {
+        "title": "JavaScript",
+        "content": "JavaScript konusundaki uzmanlığım, değişkenler, veri yapıları ve kontrol yapıları gibi temel unsurları içermekte ve ok fonksiyonları ile yüksek düzey fonksiyonları da kapsayan fonksiyon yapılarıyla devam etmektedir. DOM'u etkili bir şekilde manipüle etme yeteneğine sahibim; element seçimi ve olay dinleyicilerini kullanarak dinamik kullanıcı arayüzleri oluşturabiliyorum. Ayrıca, Promises ve async/await ile asenkron programlamada yetkinim, bu da verimli veri yönetimini mümkün kılıyor. React çerçevesini kullanarak modern uygulamalar geliştirme konusunda pratik deneyimim var ve hata yönetimi ile hata ayıklama süreçlerini konsol araçları kullanarak yürütmekteyim. RESTful API'lerle veri alma ve işleme konusundaki deneyimim de bulunmaktadır. Sürekli gelişime kendimi adadım ve etkili ve yenilikçi çözümler sunmayı hedefliyorum."
       },
-      "Skills": {
-        "title": "Yetenekler",
-        "javascript": "Java Script",
-        "react": "React.Js",
-        "nodejs": "Node.Js",
-        "javascriptDesc": "JavaScript'te temiz kod yazma ve problem çözme konusunda deneyimliyim.",
-        "reactDesc": "React ile güçlü kullanıcı arayüzleri oluşturma konusunda uzmanım.",
-        "nodejsDesc": "Node.js ile back-end geliştirme konusunda güçlü bir anlayışa sahibim."
+      {
+        "title": "React",
+        "content": "React konusundaki uzmanlığım, bileşen yapısı, state ve props kullanarak durum yönetimi, ve uygulama performansını optimize eden yaşam döngüsü yöntemlerini içermektedir. Olay yönetimi, form işleme ve koşullu render ile sezgisel kullanıcı arayüzleri oluşturma becerisine sahibim. Ayrıca, React Router ile yönlendirme yapma, modüler ve sürdürülebilir stil için stil bileşenlerini kullanma ve Redux ve Axios gibi popüler kütüphanelerle entegrasyon sağlama konularında deneyimim bulunmaktadır. Uygulamaların kalitesini ve güvenilirliğini sağlamak amacıyla Jest ve Enzyme gibi araçlarla test süreçlerini yürütme deneyimim de mevcuttur. Sürekli öğrenme hedefim doğrultusunda, yenilikçi çözümler sunarak kullanıcı deneyimini geliştirmeye çalışıyorum."
       },
-      "Profile": {
-        "profileTitle": "Profil",
-        "dateOfBirth": "Doğum Tarihi",
-        "dateOfBirthValue": "24.03.1996",
-        "location": "İkamet Şehri",
-        "locationValue": "Ankara",
-        "education": "Eğitim Durumu",
-        "educationValue": "Hacettepe Üniv. Biyoloji\nLisans, 2016",
-        "preferredRole": "Tercih Ettiği Rol",
-        "preferredRoleValue": "Frontend, UI"
-      },
-      "AboutMe": {
-        "aboutTitle": "Hakkımda",
-        "aboutDescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, dolt laborum aliquam voluptatum nisi mollitia.\n\nMinima accusamus ratione soluta asperrim sit voluptas? Dicta quod deserunt quam temporibus cumque magnam!"
-      },
+      {
+        "title": "Tailwind",
+        "content": "Tailwind CSS konusundaki yetkinliğim, verimli stil ve bileşen tasarımı için utility-first yaklaşımını kullanmamı sağlamaktadır. Özel temalar oluşturma ve responsive tasarım ilkelerini uygulama konusunda deneyimim var. Flexbox ve Grid sistemlerini kullanarak esnek düzenler oluşturabiliyorum. Projelerin gereksinimlerine göre utility özelleştirmeleri yaparak, etkileşimleri geliştirmek için animasyon ve geçiş efektleri uyguluyorum. Ayrıca, daisyUI gibi bileşen kütüphaneleri ile entegrasyon yapma ve projeleri performans açısından optimize etme becerisine sahibim. Hızlı ve etkili kullanıcı arayüzleri oluşturmak için kendimi sürekli geliştirmekteyim."
+      }
+    ],
+    "Profile": {
+      "subProfile": [
+        {
+          "title": "Doğum Tarihi",
+          "value": "05.06.2001"
+        },
+        {
+          "title": "Şehir",
+          "value": "Istanbul"
+        },
+        {
+          "title": "Eğitim",
+          "value": "Istanbul Üniversitesi, Bilgisayar Programcılığı"
+        },
+        {
+          "title": "Tercih Ettiği Rol",
+          "value": "Frontend, UI"
+        }
+      ],
+      "about": {
+        "title": "Hakkımda",
+        "content": "Büyüme zihniyetine sahip bir Frontend Geliştiricisi olarak, kullanıcı dostu ve modern web uygulamaları geliştirmeye tutkuyla yaklaşmaktayım. Çocukluk hayalimi gerçekleştirmek için HTML, CSS, JavaScript, React.js, Tailwind CSS ve Redux gibi teknolojilerde derinlemesine bilgi ve beceriler edindim. Teknoloji dünyasındaki yeniliklere açık olup, problem çözme zihniyetine sahibim; her projeyi kişisel ve profesyonel gelişim fırsatı olarak görüyorum. Takım odaklı çalışmayı benimseyerek, projelerde etkili iletişim kurarak değer katmayı hedefliyorum. Yazılım dünyasındaki yeni zorluklarla karşılaşmak için sabırsızlanıyor ve gelecekte modern teknolojileri kullanarak yaratıcı ve performans odaklı çözümler üretmeye devam etmeyi planlıyorum."
+      }
+    },
+    
       "Projects": {
-        "projectsTitle": "Projeler",
-        "workintech": {
-          "title": "Workintech",
-          "description": "GDPR ve CCPA düzenlemelerine uymanıza yardımcı olmak için basit, özelleştirilebilir, minimal tek sayfalık çerez izin banner'ı. Birden fazla framework ile uyumlu ve özelleştirme destekli."
-        },
-        "randomJokes": {
-          "title": "Rastgele Şakalar",
-          "description": "GDPR ve CCPA düzenlemelerine uymanıza yardımcı olmak için basit, özelleştirilebilir, minimal tek sayfalık çerez izin banner'ı. Birden fazla framework ile uyumlu ve özelleştirme destekli."
-        },
-        "journey": {
-          "title": "Yolculuk",
-          "description": "GDPR ve CCPA düzenlemelerine uymanıza yardımcı olmak için basit, özelleştirilebilir, minimal tek sayfalık çerez izin banner'ı. Birden fazla framework ile uyumlu ve özelleştirme destekli."
-        },
-        "github": "Github",
-        "viewSite": "Siteyi Gör"
+        "title": "Projelerim",
+        "items": [
+          {
+            "img": "https://picsum.photos/100",
+            "title": "Technological Meals",
+            "description": "Kullanıcılarınıza hangi çerezleri kabul edip etmeyeceklerini seçme imkanı sunan basit, özelleştirilebilir bir çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve NPM paketi olarak mevcut. Git deposu sayesinde kodda ve temalarda her türlü özelleştirme yapılabiliyor.",
+            "technologies": ["react", "reactstrap", "grid"],
+            "github": "https://www.exampleproject.com",
+            "viewSite": "https://www.exampleproject.com"
+          },
+          {
+            "img": "https://picsum.photos/100",
+            "title": "Technological Meals",
+            "description": "Kullanıcılarınıza hangi çerezleri kabul edip etmeyeceklerini seçme imkanı sunan basit, özelleştirilebilir bir çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve NPM paketi olarak mevcut. Git deposu sayesinde kodda ve temalarda her türlü özelleştirme yapılabiliyor.",
+            "technologies": ["react", "reactstrap", "grid"],
+            "github": "https://www.exampleproject.com",
+            "viewSite": "https://www.exampleproject.com"
+          },
+          {
+            "img": "https://picsum.photos/100",
+            "title": "Technological Meals",
+            "description": "Kullanıcılarınıza hangi çerezleri kabul edip etmeyeceklerini seçme imkanı sunan basit, özelleştirilebilir bir çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve NPM paketi olarak mevcut. Git deposu sayesinde kodda ve temalarda her türlü özelleştirme yapılabiliyor.",
+            "technologies": ["react", "reactstrap", "grid"],
+            "github": "https://www.exampleproject.com",
+            "viewSite": "https://www.exampleproject.com"
+          }
+        ]
       },
       "Footer": {
-        "contact": "Bir sonraki ürününüzde birlikte çalışalım.",
-        "email": "almilasu.code@gmail.com",
-        "blog": "Kişisel Blog",
-        "github": "Github",
-        "linkedin": "LinkedIn"
+        "catchword": "Geleceğin projesini birlikte tasarlamaya hazır mısınız?",
+        "mail": "alperenmimarlar@gmail.com",
+        "links": [
+          "Kişisel Blog",
+          "Github",
+          "Linkedin"
+        ]
       }
     }
-  }
-  
+    
+}

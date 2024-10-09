@@ -12,7 +12,7 @@ const ModeSwitch = () => {
     setLanguage(newLanguage);
   };
   return (
-    <div className="flex items-center space-x-4">
+    <div className="my-5 lg:my-0 flex items-center space-x-4">
       <label className="flex items-center cursor-pointer">
         <input
           type="checkbox"
@@ -20,7 +20,7 @@ const ModeSwitch = () => {
           checked={darkMode}
           onChange={toggleDarkMode}
         />
-        <div className="relative w-14 h-7 rounded-full flex items-center justify-between px-1 bg-gray-300 dark:bg-dark-buttonColor">
+        <div className="relative w-14 h-7 rounded-full flex items-center justify-between px-1 bg-primary dark:bg-dark-buttonColor">
           <div
             className={`h-6 w-6 rounded-full flex items-center justify-center transition-transform duration-500 transform ${
               darkMode ? "translate-x-6" : ""

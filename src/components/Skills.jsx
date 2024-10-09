@@ -1,34 +1,21 @@
 import { useLanguage } from "../contexts/languageContext";
+
 function Skills() {
   const { currentData } = useLanguage();
   if (!currentData) return <p>Loading...</p>;
+
   return (
     <section id="skills" className="py-16">
-      <h2 className="text-4xl font-semibold dark:text-dark-blueGray mb-6 text-light-black">
+      <h2 className="text-center text-4xl lg:text-left font-semibold dark:text-dark-blueGray mb-6 text-light-black">
         Skills
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div>
-          <h3 className="sub-heading">Java Script</h3>
-          <p className="">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-        <div>
-          <h3 className="sub-heading">React.Js</h3>
-          <p className="">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-        <div>
-          <h3 className="sub-heading">Node.Js</h3>
-          <p className="">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
+      <div className="lg:grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {currentData.Skills.map((skill, index) => (
+          <div key={index}>
+            <h3 className="sub-heading mt-8">{skill.title}</h3>
+            <p>{skill.content}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
