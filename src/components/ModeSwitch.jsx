@@ -8,25 +8,44 @@ const ModeSwitch = () => {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
     if (darkMode === false && language === "tr") {
-      toast.dark("Karanlık Mode'a geçildi");
-    } else if (darkMode === true && language === "tr") {
       toast.info("Aydınlık Mode'a geçildi");
+    } else if (darkMode === true && language === "tr") {
+      toast.dark("Karanlık Mode'a geçildi");
     } else if (darkMode === false && language === "en") {
-      toast.dark("Switched to Dark Mode");
-    } else if (darkMode === true && language === "en") {
       toast.info("Switched to Light Mode");
+    } else if (darkMode === true && language === "en") {
+      toast.dark("Switched to Dark Mode");
     }
   };
   const toggleLanguage = () => {
     const newLanguage = language === "tr" ? "en" : "tr";
     setLanguage(newLanguage);
-    toast.dark(
-      newLanguage === "en"
-        ? "Language changed to English"
-        : "Dil Türkçe olarak değiştirildi"
-    );
+    if (darkMode === false) {
+      toast.dark(
+        newLanguage === "en"
+          ? "Language changed to English"
+          : "Dil Türkçe olarak değiştirildi"
+      );
+    } else if (darkMode === true) {
+      toast.info(
+        newLanguage === "en"
+          ? "Language changed to English"
+          : "Dil Türkçe olarak değiştirildi"
+      );
+    } else if (darkMode === false) {
+      toast.dark(
+        newLanguage === "tr"
+          ? "Dil Türkçe olarak değiştirildi"
+          : "Language changed to English"
+      );
+    } else if (darkMode === true) {
+      toast.info(
+        newLanguage === "tr"
+          ? "Dil Türkçe olarak değiştirildi"
+          : "Language changed to English"
+      );
+    }
   };
-
   return (
     <div className="my-5 lg:my-0 flex items-center space-x-4">
       <label className="flex items-center cursor-pointer">

@@ -4,8 +4,8 @@ function Profile() {
   const { currentData } = useLanguage();
 
   return (
-    <section className="lg:py-16">
-      <h3 className="text-center lg:text-left text-4xl font-semibold dark:text-dark-blueGray mb-6 text-light-black">
+    <section className="lg:py-0">
+      <h3 className="text-center lg:text-left text-5xl font-semibold dark:text-dark-blueGray mb-6 text-light-black">
         Profile
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -25,6 +25,7 @@ function Profile() {
           <p className="mb-4">{currentData.Profile.about.content}</p>
         </div>
       </div>
+      <hr className="mt-20" />
     </section>
   );
 }

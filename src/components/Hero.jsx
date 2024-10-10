@@ -12,16 +12,18 @@ const Hero = () => {
             {currentData.Intro.name}
           </h1>
         </div>
-        <h1 className="text-4xl my-5 font-bold lg:mb-4 text-light-black sm:m-0 text-center mx-auto lg:text-left lg:mx-0 lg:text-7xl lg:w-3/4 ">
+        <h1 className="text-4xl my-5 font-bold lg:mb-4 text-light-black sm:m-0 text-center mx-auto lg:text-left lg:mx-0 lg:text-7xl lg:w-3/4 dark:text-dark-blueGray">
           {currentData.Intro.title}
         </h1>
-        <p className="lg:w-2/3 w-full">{currentData.Intro.description}</p>
+        <p className="lg:w-2/3 w-full leading-7">
+          {currentData.Intro.description}
+        </p>
 
         <div className="flex lg:w-2/3 w-full space-x-2 justify-between lg:justify-start my-5">
           {currentData.Buttons.map((button, index) => (
             <button
               key={index}
-              className="p-1 rounded flex items-center bg-white text-tertiary border border-tertiary  hover:bg-tertiary hover:text-white hover:border-transparent dark:bg-dark-darkGray dark:text-dark-lightGray dark:border dark:border-dark-lightGray hover:dark:text-black hover:dark:bg-dark-lightGray"
+              className="p-1 lg:p-2 rounded flex items-center bg-white text-tertiary border border-tertiary  hover:bg-tertiary hover:text-white hover:border-transparent dark:bg-dark-darkGray dark:text-dark-lightGray dark:border dark:border-dark-lightGray hover:dark:text-black hover:dark:bg-dark-lightGray"
             >
               {button.icon && (
                 <i

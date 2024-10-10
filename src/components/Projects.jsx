@@ -4,7 +4,7 @@ const Projects = () => {
   const { currentData } = useLanguage();
   return (
     <section id="projects" className="lg:py-16">
-      <h2 className="text-4xl text-center lg:text-left font-semibold dark:text-dark-blueGray mb-8 text-light-black">
+      <h2 className="text-5xl text-center lg:text-left font-semibold dark:text-dark-blueGray mb-8 text-light-black">
         {currentData.Projects.title}
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-40">
@@ -16,7 +16,7 @@ const Projects = () => {
               className="w-full object-cover"
             />
             <div className="mt-3 flex flex-col flex-grow">
-              <h3 className="text-2xl  text-center lg:text-left font-semibold mb-2 dark:text-dark-lightLavender text-light-blue">
+              <h3 className="text-2xl text-center lg:text-left font-semibold mb-2 dark:text-dark-lightLavender text-light-blue">
                 {project.title}
               </h3>
               <p className="mb-4 flex-grow">{project.description}</p>

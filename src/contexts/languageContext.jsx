@@ -19,17 +19,21 @@ export function LanguageContextProvider({ children }) {
   }, [language]);
 
   useEffect(() => {
-    axios
-      .post("https://reqres.in/api/workintech", data)
-      .then((response) => {
-        console.log("RESPONSE: ", response);
+    const fetchData = async () => {
+      try {
+        const response = await axios.post(
+          "https://reqres.in/api/workintech",
+          data
+        );
         language === "en"
           ? setFilteredData(response.data.en)
           : setFilteredData(response.data.tr);
-      })
-      .catch((error) => {
+      } catch (error) {
         console.log(error);
-      });
+      }
+    };
+
+    fetchData();
   }, [language]);
 
   return (
@@ -40,7 +44,6 @@ export function LanguageContextProvider({ children }) {
         currentData: filteredData,
         loading,
         setFilteredData,
-        filteredData,
       }}
     >
       {children}
