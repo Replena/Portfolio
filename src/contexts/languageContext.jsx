@@ -16,6 +16,10 @@ export function LanguageContextProvider({ children }) {
     }
   }, [language, setLanguage]);
 
+  if (loading) {
+    return <div>Veriler yükleniyor...</div>;
+  }
+
   return (
     <LanguageContext.Provider
       value={{ language, setLanguage, currentData: fetchedData, loading }}

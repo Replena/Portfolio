@@ -2,7 +2,6 @@ import { useLanguage } from "../contexts/languageContext";
 
 function Skills() {
   const { currentData } = useLanguage();
-  if (!currentData) return <p>Loading...</p>;
 
   return (
     <section id="skills" className="py-16">

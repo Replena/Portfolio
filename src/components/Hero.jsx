@@ -2,7 +2,6 @@ import { useLanguage } from "../contexts/languageContext";
 
 const Hero = () => {
   const { currentData } = useLanguage();
-  if (!currentData) return <p>Loading...</p>;
 
   return (
     <section className="md:container lg:h-1/2 lg:mb-11 lg:mt-11 lg:flex lg:flex-row flex flex-col">

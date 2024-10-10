@@ -1,7 +1,6 @@
 import { useLanguage } from "../contexts/languageContext";
 function Footer() {
   const { currentData } = useLanguage();
-  if (!currentData) return <p>Loading...</p>;
   const colors = [
     "text-light-dark dark:text-dark-lightGray",
     "text-light-green dark:text-dark-green",

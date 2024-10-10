@@ -2,7 +2,6 @@ import { useLanguage } from "../contexts/languageContext";
 
 const Projects = () => {
   const { currentData } = useLanguage();
-  if (!currentData) return <p>Loading...</p>;
   return (
     <section id="projects" className="lg:py-16">
       <h2 className="text-4xl text-center lg:text-left font-semibold dark:text-dark-blueGray mb-8 text-light-black">

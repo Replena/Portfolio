@@ -4,7 +4,6 @@ import ModeSwitch from "./ModeSwitch";
 const Header = () => {
   const { currentData, loading } = useLanguage();
 
-  if (loading) return <p>Loading...</p>;
   return (
     <header className="lg:flex lg:flex-col lg:items-end lg:p-4 lg:space-y-4">
       <ModeSwitch />

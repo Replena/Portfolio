@@ -1,3 +1,4 @@
+import React, { Suspense } from "react";
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
 import Skills from "./components/Skills.jsx";
@@ -11,35 +12,37 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
-    <LanguageContextProvider>
-      <DarkModeContextProvider>
-        <div className="bg-white dark:bg-gray-900 text-secondary dark:text-white min-h-screen">
-          <div className="min-h-screen container mx-auto px-2 ">
-            <Header />
-            <main className="container mx-auto px-4">
-              <Hero />
-              <Skills />
-              <Profile />
-              <Projects />
-            </main>
+    <Suspense fallback={<div>Uygulama yükleniyor...</div>}>
+      <LanguageContextProvider>
+        <DarkModeContextProvider>
+          <div className="bg-white dark:bg-gray-900 text-secondary dark:text-white min-h-screen">
+            <div className="min-h-screen container mx-auto px-2 ">
+              <Header />
+              <main className="container mx-auto px-4">
+                <Hero />
+                <Skills />
+                <Profile />
+                <Projects />
+              </main>
+            </div>
+            <Footer />
           </div>
-          <Footer />
-        </div>
-        <ToastContainer
-          position="top-center"
-          autoClose={2000}
-          limit={3}
-          hideProgressBar
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
-        />
-      </DarkModeContextProvider>
-    </LanguageContextProvider>
+          <ToastContainer
+            position="top-center"
+            autoClose={2000}
+            limit={3}
+            hideProgressBar
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+          />
+        </DarkModeContextProvider>
+      </LanguageContextProvider>
+    </Suspense>
   );
 }
 

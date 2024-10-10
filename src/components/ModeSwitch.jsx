@@ -3,7 +3,9 @@ import { useLanguage } from "../contexts/languageContext";
 
 const ModeSwitch = () => {
   const { darkMode, setDarkMode } = useDarkMode();
-  const { setLanguage, currentData, language, fetchedData } = useLanguage();
+  const { setLanguage, currentData, language, fetchedData, loading } =
+    useLanguage();
+  console.log(fetchedData);
   console.log(currentData);
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -12,6 +14,7 @@ const ModeSwitch = () => {
     const newLanguage = language === "tr" ? "en" : "tr";
     setLanguage(newLanguage);
   };
+
   return (
     <div className="my-5 lg:my-0 flex items-center space-x-4">
       <label className="flex items-center cursor-pointer">

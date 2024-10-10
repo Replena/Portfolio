@@ -2,7 +2,6 @@ import { useLanguage } from "../contexts/languageContext";
 
 function Profile() {
   const { currentData } = useLanguage();
-  if (!currentData) return <p>Loading...</p>;
 
   return (
     <section className="lg:py-16">
