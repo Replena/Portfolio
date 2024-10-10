@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+/*import { useEffect, useState } from "react";
 import axios from "axios";
 import data from "../data/data.json";
 import { toast } from "react-toastify";
@@ -69,3 +69,4 @@ const useAPI = (language) => {
 };
 
 export default useAPI;
+*/

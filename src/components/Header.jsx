@@ -2,7 +2,7 @@ import { useLanguage } from "../contexts/languageContext";
 import ModeSwitch from "./ModeSwitch";
 
 const Header = () => {
-  const { currentData, loading } = useLanguage();
+  const { currentData } = useLanguage();
 
   return (
     <header className="lg:flex lg:flex-col lg:items-end lg:p-4 lg:space-y-4">

@@ -13,10 +13,8 @@ export function DarkModeContextProvider({ children }) {
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
-      toast.dark("Dark mode enabled");
     } else {
       document.documentElement.classList.remove("dark");
-      toast.dark("Dark mode disabled");
     }
   }, [darkMode]);
 

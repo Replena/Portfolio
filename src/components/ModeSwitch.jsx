@@ -1,18 +1,30 @@
+import { toast } from "react-toastify";
 import { useDarkMode } from "../contexts/darkModeContext";
 import { useLanguage } from "../contexts/languageContext";
 
 const ModeSwitch = () => {
   const { darkMode, setDarkMode } = useDarkMode();
-  const { setLanguage, currentData, language, fetchedData, loading } =
-    useLanguage();
-  console.log(fetchedData);
-  console.log(currentData);
+  const { setLanguage, currentData, language } = useLanguage();
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
+    if (darkMode === false && language === "tr") {
+      toast.dark("Karanlık Mode'a geçildi");
+    } else if (darkMode === true && language === "tr") {
+      toast.info("Aydınlık Mode'a geçildi");
+    } else if (darkMode === false && language === "en") {
+      toast.dark("Switched to Dark Mode");
+    } else if (darkMode === true && language === "en") {
+      toast.info("Switched to Light Mode");
+    }
   };
   const toggleLanguage = () => {
     const newLanguage = language === "tr" ? "en" : "tr";
     setLanguage(newLanguage);
+    toast.dark(
+      newLanguage === "en"
+        ? "Language changed to English"
+        : "Dil Türkçe olarak değiştirildi"
+    );
   };
 
   return (
