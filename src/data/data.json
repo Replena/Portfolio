@@ -131,11 +131,7 @@
     "Footer": {
       "catchword": "Are you ready to design the project of the future together?",
       "mail": "alperenmimarlar@gmail.com",
-      "links": [
-        "Personal Blog",
-        "Github",
-        "Linkedin"
-      ]
+      "links": [{"label":"Personal Blog","url":"#"},{"label": "Github","url":"https://github.com/Replena"},{"label": "Linkedin","url":"https://www.linkedin.com/in/alperen-mimarlar-683610202/"}]
     }
   },
   "tr": {
@@ -260,10 +256,7 @@
       "Footer": {
         "catchword": "Geleceğin projesini birlikte tasarlamaya hazır mısınız?",
         "mail": "alperenmimarlar@gmail.com",
-        "links": [
-          "Kişisel Blog",
-          "Github",
-          "Linkedin"
+        "links": [{"label":"Kişisel Blog","url":"#"},{"label": "Github","url":"https://github.com/Replena"},{"label": "Linkedin","url":"https://www.linkedin.com/in/alperen-mimarlar-683610202/"}
         ]
       }
     }

@@ -37,11 +37,11 @@ function Footer() {
               <a
                 data-cy={`footer-link-${index}`}
                 key={index}
-                href="#"
+                href={link.url}
                 target="_blank"
                 className={colors[index % colors.length]}
               >
-                {link}
+                {link.label}
               </a>
             ))}
           </div>

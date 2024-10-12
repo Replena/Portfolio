@@ -18,7 +18,11 @@ const ModeSwitch = () => {
   const toggleLanguage = () => {
     const newLanguage = language === "tr" ? "en" : "tr";
     setLanguage(newLanguage);
-    toast.info(currentData.Toast.language);
+    if (darkMode === true) {
+      toast.info(currentData.Toast.language);
+    } else {
+      toast.dark(currentData.Toast.language);
+    }
   };
 
   return (
@@ -43,6 +47,9 @@ const ModeSwitch = () => {
             }`}
           >
             <div src="" className="h-4 w-4 ring-0 bg-[#FFE86E] rounded-full" />
+            {!darkMode && (
+              <div className="absolute w-3 h-3 rounded-full bg-dark-buttonColor top-1/2 left-1/2  -translate-x-1/4 -translate-y-1/2" />
+            )}
           </div>
         </div>
         <span data-cy="mode-switch-text" className="ml-3 text-lg font-bold ">
