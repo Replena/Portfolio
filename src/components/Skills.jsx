@@ -4,7 +4,7 @@ function Skills() {
   const { currentData } = useLanguage();
 
   return (
-    <section data-cy="skills-container" className="py-16">
+    <section id="Skills" data-cy="skills-container" className="py-16 ">
       <h2
         data-cy="skills-title"
         className="text-center text-5xl lg:text-left font-semibold dark:text-dark-blueGray mb-6 lg:mb-0 text-light-black"

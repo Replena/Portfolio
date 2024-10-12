@@ -3,10 +3,16 @@ import ModeSwitch from "./ModeSwitch";
 
 const Header = () => {
   const { currentData } = useLanguage();
+  const scrollToSection = (url) => {
+    const element = document.getElementById(url);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <header
       data-cy="header-container"
-      className="lg:flex lg:flex-col lg:items-end lg:p-4 lg:space-y-4"
+      className="lg:flex lg:flex-col lg:items-end lg:p-4 lg:space-y-4 "
     >
       <ModeSwitch />
       <div
@@ -27,14 +33,14 @@ const Header = () => {
           className="flex lg:space-x-32 justify-evenly dark:text-secondary"
         >
           {currentData.Header.nav.map((item, index) => (
-            <a
-              href={`#${item}`}
+            <button
+              onClick={() => scrollToSection(item.url)}
               key={index}
               className="btn-primary"
               data-cy={`nav-link-${index}`}
             >
-              {item}
-            </a>
+              {item.label}
+            </button>
           ))}
         </nav>
       </div>

@@ -1,12 +1,13 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import useLocalStorage from "../hooks/useLocalStorage";
-const LanguageContext = createContext();
 import data from "../data/data.json";
 import axios from "axios";
 
+const LanguageContext = createContext();
 export function LanguageContextProvider({ children }) {
   const [language, setLanguage] = useLocalStorage("language", "");
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
   const [filteredData, setFilteredData] = useState(data.en);
 
   useEffect(() => {
@@ -19,21 +20,35 @@ export function LanguageContextProvider({ children }) {
   }, [language]);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.post(
-          "https://reqres.in/api/workintech",
-          data
-        );
-        language === "en"
-          ? setFilteredData(response.data.en)
-          : setFilteredData(response.data.tr);
-      } catch (error) {
-        console.log(error);
-      }
-    };
+    const loaded = sessionStorage.getItem("data");
+    const isLoaded = sessionStorage.getItem("isLoaded");
+    const parsedData = JSON.parse(loaded);
+    if (isLoaded) {
+      language === "en"
+        ? setFilteredData(parsedData.en)
+        : setFilteredData(parsedData.tr);
+      setLoading(false);
+    } else {
+      const fetchData = async () => {
+        try {
+          const response = await axios.post(
+            "https://reqres.in/api/workintech",
+            data
+          );
+          language === "en"
+            ? setFilteredData(response.data.en)
+            : setFilteredData(response.data.tr);
+          sessionStorage.setItem("data", JSON.stringify(response.data));
+          sessionStorage.setItem("isLoaded", "true");
+          setLoading(false);
+        } catch (error) {
+          console.log(error);
+          setError(error.message);
+        }
+      };
 
-    fetchData();
+      fetchData();
+    }
   }, [language]);
 
   return (
@@ -44,6 +59,7 @@ export function LanguageContextProvider({ children }) {
         currentData: filteredData,
         loading,
         setFilteredData,
+        error,
       }}
     >
       {children}

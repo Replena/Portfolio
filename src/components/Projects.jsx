@@ -3,7 +3,7 @@ import { useLanguage } from "../contexts/languageContext";
 const Projects = () => {
   const { currentData } = useLanguage();
   return (
-    <section data-cy="projects-container" className="lg:py-16">
+    <section id="Projects" data-cy="projects-container" className="lg:py-16">
       <h2
         data-cy="projects-title"
         className="text-5xl text-center lg:text-left font-semibold dark:text-dark-blueGray mb-8 text-light-black"

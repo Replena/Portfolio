@@ -7,17 +7,28 @@
       "light":"Switched to Light Mode"
     },
     "ModeSwitch": {
-      "darkMode": "DARK MODE",
+      "darkMode": "LIGHT MODE",
+      "lightMode":"DARK MODE",
       "languageSwitch": "TÜRKÇE",
       "languageTo": "'YE ÇEVİR"
     },
     "Header": {
       "nav": [
-        "Skills",
-        "Projects",
-        "Hire me"
+        {
+          "label": "Skills",
+          "url": "Skills"
+        },
+        {
+          "label": "Projects",
+          "url": "Projects"
+        },
+        {
+          "label": "Hire Me",
+          "url": "Footer"
+        }
       ]
     },
+    
     "Intro": {
       "name": "Alperen Mimarlar",
       "title": "Creative thinker Minimalism lover",
@@ -26,15 +37,19 @@
     },
 "Buttons": [
    {
-      "label": "Work with me"
+      "label": "Work with me",
+      "icon": null,
+      "link":"#"
     },
     {
       "label": "GitHub",
-      "icon": "fa-brands fa-github"
+      "icon": "fa-brands fa-github",
+      "link":"https://github.com/Replena"
     },
     {
       "label": "LinkedIn",
-      "icon": "fab fa-linkedin-in"
+      "icon": "fab fa-linkedin-in",
+      "link":"https://www.linkedin.com/in/alperen-mimarlar-683610202/"
     }
   ],
     "Skills": {   
@@ -82,29 +97,29 @@
       "title": "Projelerim",
       "items":  [
       {
-        "img": "https://picsum.photos/100",
+        "img": "https://picsum.photos/id/271/100",
         "title": "Technological Meals",
-        "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-        "technologies": ["react", "reactstrap", "grid"],
+        "description": "A feature-rich plugin that helps users manage their cookie preferences effectively, ensuring a seamless browsing experience.",
+        "technologies": ["react", "tailwind", "cypress"],
         "github":"Github",
         "view":"View Site",
         "githubSite": "https://www.exampleproject.com",
         "viewSite": "https://www.exampleproject.com"
       },
       {
-        "img": "https://picsum.photos/100",
-        "title": "Technological Meals",
+        "img": "https://picsum.photos/id/273/100",
+        "title": "Cookie Monster",
         "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-        "technologies": ["react", "reactstrap", "grid"],
+        "technologies": ["react", "bootstrap", "scss"],
         "github":"Github",
         "view":"View Site",
         "githubSite": "https://www.exampleproject.com",
         "viewSite": "https://www.exampleproject.com"
       },
       {
-        "img": "https://picsum.photos/100",
-        "title": "Technological Meals",
-        "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+        "img": "https://picsum.photos/id/27/100",
+        "title": "Grid System",
+        "description": "An advanced grid system built with React and Reactstrap for creating responsive layouts with ease.",
         "technologies": ["react", "reactstrap", "grid"],
         "github":"Github",
         "view":"View Site",
@@ -131,15 +146,16 @@
       "light":"Aydınlık Mode'a geçildi"
     },
     "ModeSwitch": {
-      "darkMode": "KARANLIK MOD",
+      "darkMode": "AYDINLIK MOD",
+      "lightMode":"KARANLIK MOD",
       "languageSwitch": "ENGLISH",
       "languageTo": "SWITCH TO "
     },
     "Header": {
       "nav": [
-        "Yetenekler",
-        "Projeler",
-        "Beraber Çalışalım"
+      {"label": "Yetenekler", "url": "Skills"},
+      {"label":  "Projeler", "url": "Projects"},
+      {"label" : "Beraber Çalışalım", "url": "Footer"}
       ]
     },
     "Intro": {
@@ -151,15 +167,18 @@
 "Buttons": [
    {
       "label": "Beraber Çalışalım",
-      "icon": null
+      "icon": null,
+      "link":"#"
     },
     {
       "label": "GitHub",
-      "icon": "fa-brands fa-github"
+      "icon": "fa-brands fa-github",
+      "link":"https://github.com/Replena"
     },
     {
       "label": "LinkedIn",
-      "icon": "fab fa-linkedin-in"
+      "icon": "fab fa-linkedin-in",
+      "link":"https://www.linkedin.com/in/alperen-mimarlar-683610202/"
     }
   ],
     "Skills": {"title":"Yeteneklerim"
@@ -207,20 +226,20 @@
         "title": "Projelerim",
         "items": [
           {
-            "img": "https://picsum.photos/id/1/100",
-            "title": "Technological Meals",
-            "description": "Kullanıcılarınıza hangi çerezleri kabul edip etmeyeceklerini seçme imkanı sunan basit, özelleştirilebilir bir çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve NPM paketi olarak mevcut. Git deposu sayesinde kodda ve temalarda her türlü özelleştirme yapılabiliyor.",
-            "technologies": ["react", "reactstrap", "grid"],
+            "img": "https://picsum.photos/id/271/100",
+            "title": "Teknolojik Yemekler",
+            "description": "Kullanıcıların hızlı bir şekilde alışveriş yapabilmelerini sağlayan, özelleştirilebilir bir e-ticaret platformu. Bu proje, React ve Redux kullanılarak geliştirilmiş olup, kullanıcı dostu arayüzüyle dikkat çekmektedir. Ürünleri kolayca filtreleme ve arama yapma imkanı sunarak alışveriş deneyimini iyileştirir.",
+            "technologies": ["react", "tailwind", "cypress"],
             "github":"Github",
             "view":"Siteyi görüntüle",
             "githubSite": "https://www.exampleproject.com",
             "viewSite": "https://www.exampleproject.com"
           },
           {
-            "img": "https://picsum.photos/id/2/70",
-            "title": "eMeals",
-            "description": "Kullanıcılarınıza hangi çerezleri kabul edip etmeyeceklerini seçme imkanı sunan basit, özelleştirilebilir bir çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve NPM paketi olarak mevcut. Git deposu sayesinde kodda ve temalarda her türlü özelleştirme yapılabiliyor.",
-            "technologies": ["react", "reactstrap", "grid"],
+            "img": "https://picsum.photos/id/273/100",
+            "title": "Notter",
+            "description": "İnteraktif bir not alma uygulaması, kullanıcıların notlarını düzenli bir şekilde saklamalarını sağlar. Bu uygulama, modern JavaScript ve SASS ile geliştirilmiştir ve kullanıcıların notlarını kategorize etmelerine olanak tanır. Kullanıcı arayüzü, şık tasarımıyla dikkat çekmekte ve notları anında erişilebilir kılmaktadır.",
+            "technologies": ["react", "bootstrap", "scss"],
             "github":"Github",
             "view":"Siteyi görüntüle",
             "githubSite": "https://www.exampleproject.com",
@@ -228,7 +247,7 @@
           },
           {
             "img": "https://picsum.photos/id/5/100",
-            "title": "Technological Meals",
+            "title": "ÇerezExp",
             "description": "Kullanıcılarınıza hangi çerezleri kabul edip etmeyeceklerini seçme imkanı sunan basit, özelleştirilebilir bir çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve NPM paketi olarak mevcut. Git deposu sayesinde kodda ve temalarda her türlü özelleştirme yapılabiliyor.",
             "technologies": ["react", "reactstrap", "grid"],
             "github":"Github",

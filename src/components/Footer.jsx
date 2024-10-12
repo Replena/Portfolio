@@ -8,6 +8,7 @@ function Footer() {
   ];
   return (
     <footer
+      id="Footer"
       data-cy="footer-container"
       className="py-12 bg-light-beige dark:bg-dark-darkerGray"
     >
@@ -19,7 +20,7 @@ function Footer() {
         </div>
         <div
           data-cy="footer-links"
-          className="flex flex-col gap-4 md:flex-row lg:justify-between lg:items-center dark:text-dark-lightPurple "
+          className="flex flex-col gap-4 md:flex-row md:justify-between lg:items-center dark:text-dark-lightPurple "
         >
           <a
             data-cy="footer-mail-link"

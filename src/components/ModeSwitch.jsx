@@ -46,7 +46,9 @@ const ModeSwitch = () => {
           </div>
         </div>
         <span data-cy="mode-switch-text" className="ml-3 text-lg font-bold ">
-          {darkMode ? "Dark Mode" : "Light Mode"}
+          {darkMode
+            ? currentData.ModeSwitch.darkMode
+            : currentData.ModeSwitch.lightMode}
         </span>
       </label>
       <div>|</div>

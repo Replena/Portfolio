@@ -33,12 +33,13 @@ const Hero = () => {
 
         <div
           data-cy="hero-buttons"
-          className="flex lg:w-2/3 w-full space-x-2 justify-between lg:justify-start my-5"
+          className="flex  w-full space-x-2 justify-between lg:justify-start my-5 "
         >
           {currentData.Buttons.map((button, index) => (
             <button
               data-cy={`hero-button-${index}`}
               key={index}
+              onClick={() => window.open(button.link, "_blank")}
               className="p-1 lg:p-2 rounded flex items-center bg-white text-tertiary border border-tertiary  hover:bg-tertiary hover:text-white hover:border-transparent dark:bg-dark-darkGray dark:text-dark-lightGray dark:border dark:border-dark-lightGray hover:dark:text-black hover:dark:bg-dark-lightGray"
             >
               {button.icon && (
