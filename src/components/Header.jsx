@@ -4,18 +4,35 @@ import ModeSwitch from "./ModeSwitch";
 const Header = () => {
   const { currentData } = useLanguage();
   return (
-    <header className="lg:flex lg:flex-col lg:items-end lg:p-4 lg:space-y-4">
+    <header
+      data-cy="header-container"
+      className="lg:flex lg:flex-col lg:items-end lg:p-4 lg:space-y-4"
+    >
       <ModeSwitch />
-      <div className="lg:w-full lg:flex lg:justify-between lg:items-center">
-        <div className="flex items-center justify-center w-16 h-16 rounded-full bg-light-lavender dark:bg-primary">
+      <div
+        data-cy="nav-links"
+        className="lg:w-full lg:flex lg:justify-between lg:items-center"
+      >
+        <div
+          data-cy="nav-link-0"
+          className="hidden lg:flex lg:items-center lg:justify-center lg:w-16 lg:h-16 lg:rounded-full bg-light-lavender dark:bg-primary"
+        >
           <div className="text-2xl font-bold rotate-30 text-light-lightpink dark:text-dark-periwinkle">
-            A
+            {currentData.FirstLetter}
           </div>
         </div>
 
-        <nav className="flex lg:space-x-32 justify-evenly dark:text-secondary">
+        <nav
+          data-cy="nav-links"
+          className="flex lg:space-x-32 justify-evenly dark:text-secondary"
+        >
           {currentData.Header.nav.map((item, index) => (
-            <a href={`#${item}`} key={index} className="btn-primary">
+            <a
+              href={`#${item}`}
+              key={index}
+              className="btn-primary"
+              data-cy={`nav-link-${index}`}
+            >
               {item}
             </a>
           ))}

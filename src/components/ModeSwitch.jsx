@@ -5,49 +5,27 @@ import { useLanguage } from "../contexts/languageContext";
 const ModeSwitch = () => {
   const { darkMode, setDarkMode } = useDarkMode();
   const { setLanguage, currentData, language } = useLanguage();
+
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
-    if (darkMode === false && language === "tr") {
-      toast.info("Aydınlık Mode'a geçildi");
-    } else if (darkMode === true && language === "tr") {
-      toast.dark("Karanlık Mode'a geçildi");
-    } else if (darkMode === false && language === "en") {
-      toast.info("Switched to Light Mode");
-    } else if (darkMode === true && language === "en") {
-      toast.dark("Switched to Dark Mode");
+    if (darkMode === false) {
+      toast.info(currentData.Toast.light);
+    } else {
+      toast.dark(currentData.Toast.dark);
     }
   };
+
   const toggleLanguage = () => {
     const newLanguage = language === "tr" ? "en" : "tr";
     setLanguage(newLanguage);
-    if (darkMode === false) {
-      toast.dark(
-        newLanguage === "en"
-          ? "Language changed to English"
-          : "Dil Türkçe olarak değiştirildi"
-      );
-    } else if (darkMode === true) {
-      toast.info(
-        newLanguage === "en"
-          ? "Language changed to English"
-          : "Dil Türkçe olarak değiştirildi"
-      );
-    } else if (darkMode === false) {
-      toast.dark(
-        newLanguage === "tr"
-          ? "Dil Türkçe olarak değiştirildi"
-          : "Language changed to English"
-      );
-    } else if (darkMode === true) {
-      toast.info(
-        newLanguage === "tr"
-          ? "Dil Türkçe olarak değiştirildi"
-          : "Language changed to English"
-      );
-    }
+    toast.info(currentData.Toast.language);
   };
+
   return (
-    <div className="my-5 lg:my-0 flex items-center space-x-4">
+    <div
+      data-cy="mode-switch-container"
+      className="p-4 lg:my-0 flex items-center space-x-4 justify-center"
+    >
       <label className="flex items-center cursor-pointer">
         <input
           type="checkbox"
@@ -55,7 +33,10 @@ const ModeSwitch = () => {
           checked={darkMode}
           onChange={toggleDarkMode}
         />
-        <div className="relative w-14 h-7 rounded-full flex items-center justify-between px-1 bg-primary dark:bg-dark-buttonColor">
+        <div
+          data-cy="dark-mode-toggle"
+          className="relative w-14 h-7 rounded-full flex items-center justify-between px-1 bg-primary dark:bg-dark-buttonColor"
+        >
           <div
             className={`h-6 w-6 rounded-full flex items-center justify-center transition-transform duration-500 transform ${
               darkMode ? "translate-x-6" : ""
@@ -64,17 +45,21 @@ const ModeSwitch = () => {
             <div src="" className="h-4 w-4 ring-0 bg-[#FFE86E] rounded-full" />
           </div>
         </div>
-        <span className="ml-3 text-lg font-bold ">
+        <span data-cy="mode-switch-text" className="ml-3 text-lg font-bold ">
           {darkMode ? "Dark Mode" : "Light Mode"}
         </span>
       </label>
       <div>|</div>
       <button
+        data-cy="language-toggle"
         className="text-lg font-bold dark:text-dark-languageDark"
         onClick={toggleLanguage}
       >
-        <span className="dark:text-dark-lightPurple text-primary">
-          {currentData === "en" ? (
+        <span
+          data-cy="language-switch-text"
+          className="dark:text-dark-lightPurple text-primary"
+        >
+          {language === "en" ? (
             <>
               {currentData.ModeSwitch.languageSwitch}
               {currentData.ModeSwitch.languageTo}

@@ -1,9 +1,15 @@
 {
   "en": {
+    "FirstLetter":"A",
+    "Toast":{
+      "language":"Dil Türkçe olarak değiştirildi",
+      "dark":"Switched to Dark Mode",
+      "light":"Switched to Light Mode"
+    },
     "ModeSwitch": {
       "darkMode": "DARK MODE",
-      "languageSwitch": "'YE ÇEVİR",
-      "languageTo": "TÜRKÇE"
+      "languageSwitch": "TÜRKÇE",
+      "languageTo": "'YE ÇEVİR"
     },
     "Header": {
       "nav": [
@@ -15,7 +21,8 @@
     "Intro": {
       "name": "Alperen Mimarlar",
       "title": "Creative thinker Minimalism lover",
-      "description": "Hi, I’m Alperen, a full-stack developer. If you're seeking a developer capable of crafting robust and scalable frontend products that deliver exceptional user experiences, I would love to connect with you."
+      "description": "Hi, I’m Alperen, a full-stack developer. If you're seeking a developer capable of crafting robust and scalable frontend products that deliver exceptional user experiences, I would love to connect with you.",
+      "imgsrc":"https://picsum.photos/id/1/200/200"
     },
 "Buttons": [
    {
@@ -30,7 +37,9 @@
       "icon": "fab fa-linkedin-in"
     }
   ],
-    "Skills": [
+    "Skills": {   
+      "title":"Skills",
+      "skill":[
       {
         "title": "JavaScript",
         "content": "My expertise in JavaScript encompasses foundational elements such as variables, data structures, and control structures, extending to function constructs that include arrow functions and higher-order functions. I possess the ability to manipulate the DOM effectively, utilizing element selection and event listeners to create dynamic user interfaces. Additionally, I am proficient in asynchronous programming with Promises and async/await, enabling efficient data management. With hands-on experience in developing modern applications using the React framework, I also conduct error management and debugging processes using console tools. My experience includes working with RESTful APIs to fetch and process data. I am committed to continuous improvement, aiming to deliver effective and innovative solutions."
@@ -43,8 +52,9 @@
         "title": "Tailwind",
         "content": "I possess a strong proficiency in Tailwind CSS, utilizing its utility-first approach for efficient styling and component design. My expertise includes creating custom themes and applying responsive design principles, leveraging Flexbox and Grid systems to achieve flexible layouts. I am adept at utility customization to suit project requirements and implementing animation and transition effects to enhance user interactions. Additionally, I have experience integrating Tailwind CSS with component libraries such as daisyUI, optimizing projects for performance and speed. I am committed to continuous improvement in my skills, aiming to create fast and effective user interfaces."
       }
-    ],
+    ]} ,
     "Profile": {
+      "title":"Profile",
       "subProfile": [
         {
           "title": "Date of Birth",
@@ -76,7 +86,9 @@
         "title": "Technological Meals",
         "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
         "technologies": ["react", "reactstrap", "grid"],
-        "github": "https://www.exampleproject.com",
+        "github":"Github",
+        "view":"View Site",
+        "githubSite": "https://www.exampleproject.com",
         "viewSite": "https://www.exampleproject.com"
       },
       {
@@ -84,7 +96,9 @@
         "title": "Technological Meals",
         "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
         "technologies": ["react", "reactstrap", "grid"],
-        "github": "https://www.exampleproject.com",
+        "github":"Github",
+        "view":"View Site",
+        "githubSite": "https://www.exampleproject.com",
         "viewSite": "https://www.exampleproject.com"
       },
       {
@@ -92,7 +106,9 @@
         "title": "Technological Meals",
         "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
         "technologies": ["react", "reactstrap", "grid"],
-        "github": "https://www.exampleproject.com",
+        "github":"Github",
+        "view":"View Site",
+        "githubSite": "https://www.exampleproject.com",
         "viewSite": "https://www.exampleproject.com"
       }
     ] 
@@ -108,6 +124,12 @@
     }
   },
   "tr": {
+    "FirstLetter":"A",
+    "Toast":{
+      "language":"Language changed to English",
+      "dark":"Karanlık Mode'a geçildi",
+      "light":"Aydınlık Mode'a geçildi"
+    },
     "ModeSwitch": {
       "darkMode": "KARANLIK MOD",
       "languageSwitch": "ENGLISH",
@@ -123,7 +145,8 @@
     "Intro": {
       "name": "Alperen Mimarlar",
       "title": "Yaratıcı Düşünür Minimalizm Sever",
-      "description": "Merhaba, ben Alperen. Full-stack geliştirici olarak, sağlam ve ölçeklenebilir frontend ürünleri oluşturma konusunda deneyim sahibiyim. Eğer kaliteli kullanıcı deneyimleri sunan projeler geliştiren bir geliştirici arıyorsanız, birlikte çalışmaktan memnuniyet duyarım."
+      "description": "Merhaba, ben Alperen. Full-stack geliştirici olarak, sağlam ve ölçeklenebilir frontend ürünleri oluşturma konusunda deneyim sahibiyim. Eğer kaliteli kullanıcı deneyimleri sunan projeler geliştiren bir geliştirici arıyorsanız, birlikte çalışmaktan memnuniyet duyarım.",
+      "imgsrc":"https://picsum.photos/id/1/200/200"
     },
 "Buttons": [
    {
@@ -139,7 +162,8 @@
       "icon": "fab fa-linkedin-in"
     }
   ],
-    "Skills": [
+    "Skills": {"title":"Yeteneklerim"
+    ,"skill":[
       {
         "title": "JavaScript",
         "content": "JavaScript konusundaki uzmanlığım, değişkenler, veri yapıları ve kontrol yapıları gibi temel unsurları içermekte ve ok fonksiyonları ile yüksek düzey fonksiyonları da kapsayan fonksiyon yapılarıyla devam etmektedir. DOM'u etkili bir şekilde manipüle etme yeteneğine sahibim; element seçimi ve olay dinleyicilerini kullanarak dinamik kullanıcı arayüzleri oluşturabiliyorum. Ayrıca, Promises ve async/await ile asenkron programlamada yetkinim, bu da verimli veri yönetimini mümkün kılıyor. React çerçevesini kullanarak modern uygulamalar geliştirme konusunda pratik deneyimim var ve hata yönetimi ile hata ayıklama süreçlerini konsol araçları kullanarak yürütmekteyim. RESTful API'lerle veri alma ve işleme konusundaki deneyimim de bulunmaktadır. Sürekli gelişime kendimi adadım ve etkili ve yenilikçi çözümler sunmayı hedefliyorum."
@@ -152,8 +176,9 @@
         "title": "Tailwind",
         "content": "Tailwind CSS konusundaki yetkinliğim, verimli stil ve bileşen tasarımı için utility-first yaklaşımını kullanmamı sağlamaktadır. Özel temalar oluşturma ve responsive tasarım ilkelerini uygulama konusunda deneyimim var. Flexbox ve Grid sistemlerini kullanarak esnek düzenler oluşturabiliyorum. Projelerin gereksinimlerine göre utility özelleştirmeleri yaparak, etkileşimleri geliştirmek için animasyon ve geçiş efektleri uyguluyorum. Ayrıca, daisyUI gibi bileşen kütüphaneleri ile entegrasyon yapma ve projeleri performans açısından optimize etme becerisine sahibim. Hızlı ve etkili kullanıcı arayüzleri oluşturmak için kendimi sürekli geliştirmekteyim."
       }
-    ],
+    ]},
     "Profile": {
+      "title":"Profilim",
       "subProfile": [
         {
           "title": "Doğum Tarihi",
@@ -186,7 +211,9 @@
             "title": "Technological Meals",
             "description": "Kullanıcılarınıza hangi çerezleri kabul edip etmeyeceklerini seçme imkanı sunan basit, özelleştirilebilir bir çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve NPM paketi olarak mevcut. Git deposu sayesinde kodda ve temalarda her türlü özelleştirme yapılabiliyor.",
             "technologies": ["react", "reactstrap", "grid"],
-            "github": "https://www.exampleproject.com",
+            "github":"Github",
+            "view":"Siteyi görüntüle",
+            "githubSite": "https://www.exampleproject.com",
             "viewSite": "https://www.exampleproject.com"
           },
           {
@@ -194,7 +221,9 @@
             "title": "eMeals",
             "description": "Kullanıcılarınıza hangi çerezleri kabul edip etmeyeceklerini seçme imkanı sunan basit, özelleştirilebilir bir çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve NPM paketi olarak mevcut. Git deposu sayesinde kodda ve temalarda her türlü özelleştirme yapılabiliyor.",
             "technologies": ["react", "reactstrap", "grid"],
-            "github": "https://www.exampleproject.com",
+            "github":"Github",
+            "view":"Siteyi görüntüle",
+            "githubSite": "https://www.exampleproject.com",
             "viewSite": "https://www.exampleproject.com"
           },
           {
@@ -202,7 +231,9 @@
             "title": "Technological Meals",
             "description": "Kullanıcılarınıza hangi çerezleri kabul edip etmeyeceklerini seçme imkanı sunan basit, özelleştirilebilir bir çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve NPM paketi olarak mevcut. Git deposu sayesinde kodda ve temalarda her türlü özelleştirme yapılabiliyor.",
             "technologies": ["react", "reactstrap", "grid"],
-            "github": "https://www.exampleproject.com",
+            "github":"Github",
+            "view":"Siteyi görüntüle",
+            "githubSite": "https://www.exampleproject.com",
             "viewSite": "https://www.exampleproject.com"
           }
         ]

@@ -12,11 +12,10 @@ const Footer = lazy(() => import("./components/Footer"));
 const Header = lazy(
   () =>
     new Promise((resolve) =>
-      setTimeout(() => resolve(import("./components/Header")), 2000)
+      setTimeout(() => resolve(import("./components/Header")), 1000)
     )
 );
 function App() {
-  const { darkMode } = useDarkMode();
   return (
     <Suspense fallback={<LazyLoading />}>
       <div className="bg-white dark:bg-gray-900 text-secondary dark:text-white min-h-screen font-sans">
